@@ -1,0 +1,30 @@
+.menu-top {
+  width: auto;
+  background: $color-gold;
+  min-height: 45px;
+  color: #fff;
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    justify-content: space-between;
+    align-content: flex-end;
+    * {
+      line-height: 45px;
+    }
+  }
+}
+.header {
+  &__box {
+    height: 160px;
+    display: flex;
+  }
+}
+.menu-main {
+  ul {
+    display: flex;
+  }
+  li {
+    list-style-type: none;
+  }
+}

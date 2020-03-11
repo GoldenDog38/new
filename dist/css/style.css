@@ -345,6 +345,22 @@ template {
 
 /* Черный цвет */
 /* Золотой цвет */
+body {
+  background-color: #2F343A;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 html {
   font-size: 12px;
 }
@@ -388,5 +404,47 @@ h2 {
   font-size: 1.5rem;
   line-height: 2.3rem;
   /* identical to box height */
+}
+
+.menu-top {
+  width: auto;
+  background: #C8A35F;
+  min-height: 45px;
+  color: #fff;
+}
+
+.menu-top .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: inherit;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+.menu-top .wrapper * {
+  line-height: 45px;
+}
+
+.header__box {
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-main ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-main li {
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+body {
+  background-color: $color-dark;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+	max-width: 1110px;
+	margin: 0 auto;
+}
