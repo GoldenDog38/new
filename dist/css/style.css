@@ -345,11 +345,15 @@ template {
 
 /* Черный цвет */
 /* Золотой цвет */
+html {
+  font-size: 12px;
+}
+
 h1 {
   font-family: Roboto;
   font-style: Bold;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 5.3rem;
+  line-height: 6.25rem;
   line-height: 100%;
   letter-spacing: 5%;
 }
@@ -358,8 +362,8 @@ h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 3.3rem;
+  line-height: 4.08rem;
   /* identical to box height */
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -370,38 +374,19 @@ p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 1.3rem;
+  line-height: 1.92rem;
   /* identical to box height */
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 
-p--top-line {
+p > h1,
+h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #C4C4C4;
-}
-
-p > h1, h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
   /* identical to box height */
-  color: #C4C4C4;
-}
-
-p.first-line * {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  /* identical to box height */
-  color: #C4C4C4;
 }
 /*# sourceMappingURL=style.css.map */

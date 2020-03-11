@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
-
+html {
+  font-size: 12px;
+}
 h1 {
   font-family: Roboto;
   font-style: Bold;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 5.3rem;
+  line-height: 6.25rem;
   line-height: 100%;
   letter-spacing: 5%;
 }
@@ -12,50 +14,29 @@ h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 3.3rem;
+  line-height: 4.08rem;
   /* identical to box height */
-
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
   color: #c4c4c4;
 }
 p {
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 23px;
-/* identical to box height */
-color: #C4C4C4;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 1.92rem;
+  /* identical to box height */
+  color: #c4c4c4;
 }
-p--top-line {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
 
-color: #C4C4C4;
-}
-p > h1, h2 {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 28px;
-/* identical to box height */
-
-color: #C4C4C4;
-}
-p.first-line *{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 16px;
-/* identical to box height */
-
-color: #C4C4C4;
+p > h1,
+h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  /* identical to box height */
 }
