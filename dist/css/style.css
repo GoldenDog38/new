@@ -498,4 +498,8 @@ h2 {
 .menu-main li {
   list-style-type: none;
 }
+
+.hero {
+  background: url(/dist/img/hero/bg.png);
+}
 /*# sourceMappingURL=style.css.map */
