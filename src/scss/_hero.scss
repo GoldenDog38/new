@@ -1,10 +1,14 @@
 .hero {
-    background-image: url(/dist/img/hero/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    g:before {
-        content :'';
-        background: black;
-        
-    }
+	.wrapper {
+		position: relative;
+		z-index: 4;
+	}
+	position: relative;
+	background-image: url(/dist/img/hero/bg.png);
+	&__overlay {
+		background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75));
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		z-index: 0;;
+	}
 }
