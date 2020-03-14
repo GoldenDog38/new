@@ -409,7 +409,7 @@ h2 {
 .menu-top {
   width: auto;
   background: #C8A35F;
-  min-height: 45px;
+  height: 45px;
   color: #fff;
 }
 
@@ -423,12 +423,8 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-}
-
-.menu-top .wrapper * {
-  line-height: 45px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .header__box {
