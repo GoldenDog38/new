@@ -12,9 +12,38 @@
   }
 }
 .header {
-	&__menu {
-		margin-left: auto;
-	}
+  &__logo {
+	  position: relative;
+	 margin-top:-10px;
+	 &:after {
+		 content: '';
+		 position: absolute;
+		 background-color: #F2F2F2;
+		 width: 2px;
+		 height: 100%;
+		 top: 0; right: -30px;
+
+	 }
+  }
+  &__ouradress {
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      color: #fff ;
+         }
+    img {
+      margin-top:-15px;
+      margin-right: 10px;
+    }
+    align-content: center;
+  }
+  &__box {
+    align-content: center;
+  }
+  &__menu {
+    margin-left: auto;
+  }
   &__box {
     height: 160px;
     display: flex;
@@ -22,10 +51,16 @@
   }
 }
 .menu-main {
+  &__list {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
   &__item {
 	 color: #fff;
 	 font-size: 1.15rem;
-	 text-transform: uppercase;
+   text-transform: uppercase;
+   font-weight: 100;
   }
   ul {
     display: flex;
@@ -34,3 +69,4 @@
     list-style-type: none;
   }
 }
+
