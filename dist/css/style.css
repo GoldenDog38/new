@@ -36,7 +36,6 @@ main {
    */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -391,7 +390,7 @@ p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   line-height: 1.92rem;
   /* identical to box height */
   color: #c4c4c4;
@@ -428,12 +427,34 @@ h2 {
       align-content: center;
 }
 
+.header__box {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .header__logo {
+  position: relative;
   margin-top: -10px;
 }
 
+.header__logo:after {
+  content: '';
+  position: absolute;
+  background-color: #F2F2F2;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: -30px;
+}
+
 .header__ouradress {
-  margin-left: 60px;
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,7 +467,6 @@ h2 {
 
 .header__ouradress p {
   color: #fff;
-  font-weight: 100;
 }
 
 .header__ouradress img {
@@ -454,22 +474,8 @@ h2 {
   margin-right: 10px;
 }
 
-.header__box {
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .header__menu {
   margin-left: auto;
-}
-
-.header__box {
-  height: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .menu-main__list {
@@ -500,6 +506,6 @@ h2 {
 }
 
 .hero {
-  background: url(/dist/img/hero/bg.png);
+  background-image: url(/dist/img/hero/bg.png);
 }
 /*# sourceMappingURL=style.css.map */
