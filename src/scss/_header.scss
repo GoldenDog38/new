@@ -15,9 +15,15 @@
   &__box {
     height: 160px;
     display: flex;
+    flex-wrap: wrap;
   }
 }
 .menu-main {
+  &__item {
+	 color: #fff;
+	 font-size: 1.15rem;
+	 text-transform: uppercase;
+  }
   ul {
     display: flex;
   }
