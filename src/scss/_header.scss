@@ -12,6 +12,9 @@
   }
 }
 .header {
+	&__menu {
+		margin-left: auto;
+	}
   &__box {
     height: 160px;
     display: flex;
