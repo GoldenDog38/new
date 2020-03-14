@@ -12,6 +12,12 @@
   }
 }
 .header {
+	&__box {
+		align-content: center;
+		height: 160px;
+		display: flex;
+		flex-wrap: wrap;
+	 }
   &__logo {
 	  position: relative;
 	 margin-top:-10px;
@@ -38,17 +44,11 @@
     }
     align-content: center;
   }
-  &__box {
-    align-content: center;
-  }
+  
   &__menu {
     margin-left: auto;
   }
-  &__box {
-    height: 160px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+
 }
 .menu-main {
   &__list {

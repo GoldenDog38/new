@@ -36,7 +36,6 @@ main {
    */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -428,6 +427,17 @@ h2 {
       align-content: center;
 }
 
+.header__box {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .header__logo {
   position: relative;
   margin-top: -10px;
@@ -464,22 +474,8 @@ h2 {
   margin-right: 10px;
 }
 
-.header__box {
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .header__menu {
   margin-left: auto;
-}
-
-.header__box {
-  height: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .menu-main__list {
@@ -507,5 +503,9 @@ h2 {
 
 .menu-main li {
   list-style-type: none;
+}
+
+.hero {
+  background-image: url(/dist/img/hero/bg.png);
 }
 /*# sourceMappingURL=style.css.map */
