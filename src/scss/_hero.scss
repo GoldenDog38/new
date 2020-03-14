@@ -1,3 +1,10 @@
 .hero {
-	background-image: url(/dist/img/hero/bg.png);
+    background-image: url(/dist/img/hero/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    g:before {
+        content :'';
+        background: black;
+        
+    }
 }

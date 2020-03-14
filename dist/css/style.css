@@ -507,5 +507,12 @@ h2 {
 
 .hero {
   background-image: url(/dist/img/hero/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero g:before {
+  content: '';
+  background: black;
 }
 /*# sourceMappingURL=style.css.map */
