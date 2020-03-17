@@ -1,12 +1,29 @@
+
 body {
   background-color: $color-dark;
+  transition: all easy 1s;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 .wrapper {
 	max-width: 1110px;
 	margin: 0 auto;
+}
+.title-h2 {
+	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+&:before {
+	content: '';
+	position: absolute;
+	top: -40px;
+	height: 6px;
+	width: 90px;
+	background: $color-gold;
+
+}	
 }

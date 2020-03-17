@@ -346,6 +346,9 @@ template {
 /* Золотой цвет */
 body {
   background-color: #2F343A;
+  -webkit-transition: all easy 1s;
+  -o-transition: all easy 1s;
+  transition: all easy 1s;
 }
 
 * {
@@ -358,6 +361,21 @@ body {
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+.title-h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+}
+
+.title-h2:before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  height: 6px;
+  width: 90px;
+  background: #C8A35F;
 }
 
 html {
@@ -394,16 +412,6 @@ p {
   line-height: 1.92rem;
   /* identical to box height */
   color: #c4c4c4;
-}
-
-p > h1,
-h2 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 2.3rem;
-  /* identical to box height */
 }
 
 .menu-top {
@@ -508,13 +516,29 @@ h2 {
 .hero {
   position: relative;
   background-image: url(/dist/img/hero/bg.png);
+  background-size: cover;
   width: auto;
-  height: 620px;
+  height: 100vh;
 }
 
 .hero .wrapper {
   position: relative;
   z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .wrapper:before {
+  content: '';
+  padding-top: 15%;
 }
 
 .hero__overlay {
@@ -529,38 +553,53 @@ h2 {
   z-index: 0;
 }
 
-.hero .title {
-  position: absolute;
-  width: 920px;
+.hero__title {
+  max-width: 920px;
   height: 245px;
-  margin: auto;
-  margin-top: 180px;
-  margin-left: 100px;
-  border: 1px solid #C8A35F;
+  border: 1px solid #c8a35f;
 }
 
-.hero .title h1 {
+.hero h1 {
   color: #ffffff;
   font-weight: bold;
-  font-size: 64px;
   line-height: 155px;
   text-align: center;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-.hero .title p {
-  position: absolute;
-  width: 777px;
-  height: 51px;
-  left: 70px;
-  font-size: 18px;
+.hero p {
+  color: #fff;
+  width: calc(100% - 140px);
+  margin: auto;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .hero__mouse {
-  height: 50px;
-  width: 50px;
-  margin-top: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.hero__mouse .mouse {
+  display: block;
+  background: url(/dist/img/header/mouse.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 30px;
+  width: 30px;
+}
+
+.slide-show {
+  background-image: url(/dist/img/slider/bg.svg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 60px;
 }
 /*# sourceMappingURL=style.css.map */
