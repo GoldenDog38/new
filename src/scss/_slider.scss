@@ -2,6 +2,48 @@
 	background-image: url(/dist/img/slider/bg.svg);
 	background-size: cover;
 	background-position: center center;
-	margin-top: 60px;
+	padding: 100px 0;
 	
+
+	.slide-block{
+		display: flex;
+		flex-wrap: wrap;
+	&__title {
+		max-width: 445px;
+	}
+	p {
+		
+		width: 345px;
+		text-transform: uppercase;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.button {
+		
+		width: 220px;
+		height: 55px;
+		background: $color-gold;
+		color : #ffffff;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 55px;
+	}
+	&__img {
+		flex-direction: column;
+	}
+	&__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__next {
+		color :$color-gold;
+		
+	}
+	&__preview {
+		color : $color-gold;
+		
+	}
+}
 }
