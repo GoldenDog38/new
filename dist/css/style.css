@@ -514,6 +514,102 @@ p {
   list-style-type: none;
 }
 
+.block-air {
+  min-width: 1108px;
+  height: 364px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.block-air .box {
+  width: 276px;
+  height: 180px;
+  background: #393F47;
+  cursor: pointer;
+}
+
+.block-air .box p {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.block-air .box__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 95px;
+  margin-top: 25px;
+  padding-left: 18px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: #C8A35F;
+}
+
+.about-company {
+  background-image: url(/dist/img/slider/about-company.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.about-company h2 {
+  margin-top: 100px;
+  width: 331px;
+  height: 37px;
+  color: #fff;
+}
+
+.about-company p {
+  width: 445px;
+  height: 179px;
+  color: #fff;
+}
+
+.about-company .company-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 580px;
+  height: 400px;
+}
+
+.about-company .company-numbers__item {
+  width: 200px;
+  height: 160px;
+  background: #fff;
+}
+
+.about-company .company-numbers h1 {
+  color: #2F343A;
+  margin-left: 60px;
+  padding-top: 30px;
+}
+
+.about-company .company-numbers h3 {
+  color: #2F343A;
+  margin-left: 75px;
+  padding-top: 10px;
+}
+
+.about-company .company-numbers p {
+  color: #2F343A;
+  margin-left: 50px;
+  padding-top: 10px;
+}
+
 .hero {
   position: relative;
   background-image: url(/dist/img/hero/bg.png);
@@ -660,5 +756,26 @@ p {
 
 .slide-show .slide-block__preview {
   color: #C8A35F;
+}
+
+.slide-show .block-air {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 1108px;
+  height: 100vh;
+}
+
+.slide-show .block-air .box {
+  width: 276px;
+  height: 180px;
+  background: #FFFFFF;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 400;
+  position: relative;
+  cursor: pointer;
+  padding: 1px;
 }
 /*# sourceMappingURL=style.css.map */
