@@ -12,43 +12,42 @@
   }
 }
 .header {
-	&__box {
-		align-content: center;
-		height: 160px;
-		display: flex;
-		flex-wrap: wrap;
-	 }
+  &__box {
+    align-content: center;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__logo {
-	  position: relative;
-	 margin-top:-10px;
-	 &:after {
-		 content: '';
-		 position: absolute;
-		 background-color: #F2F2F2;
-		 width: 2px;
-		 height: 100%;
-		 top: 0; right: -30px;
-
-	 }
+    position: relative;
+    margin-top: -10px;
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: #f2f2f2;
+      width: 2px;
+      height: 100%;
+      top: 0;
+      right: -30px;
+    }
   }
   &__ouradress {
     margin-left: 50px;
     display: flex;
     justify-content: space-between;
     p {
-      color: #fff ;
-         }
+      color: #fff;
+    }
     img {
-      margin-top:-15px;
+      margin-top: -15px;
       margin-right: 10px;
     }
     align-content: center;
   }
-  
+
   &__menu {
     margin-left: auto;
   }
-
 }
 .menu-main {
   &__list {
@@ -57,91 +56,15 @@
     justify-content: space-between;
   }
   &__item {
-	 color: #fff;
-	 font-size: 1.15rem;
-   text-transform: uppercase;
-   font-weight: 100;
+    color: #fff;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    font-weight: 100;
   }
   ul {
     display: flex;
   }
   li {
     list-style-type: none;
-  }
-}
-
-
-.block-air {
-	min-width:1108px;
-	height: 364px;
-	display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-	.box {
-		width: 276px;
-		height: 180px;
-    background: #393F47;
-    cursor: pointer;
-    p {
-      color : #ffffff;
-      text-align: center;
-      text-transform: uppercase;
-      margin-top: 40px;
-    }
-    &__circle {
-      display: flex;
-      margin-left: 95px;
-      margin-top: 25px;
-      padding-left: 18px;
-      height: 70px;
-      width: 70px;
-      border-radius: 50%;
-      background: $color-gold;
-    }
-  }
-}
-.about-company {
-  background-image: url(/dist/img/slider/about-company.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 450px;
-  h2 {
-    margin-top: 100px;
-    width: 331px;
-    height: 37px; 
-    color: #fff;
-  }
-  p {
-    width: 445px;
-    height: 179px;
-    color: #fff;
-  }
-  .company-numbers {
-    display: flex;
-    justify-content: space-between;
-    width: 580px;
-    height: 400px;
-    &__item {
-      width: 200px;
-      height: 160px;
-      background: #fff;
-    }
-    h1 {
-      color:$color-dark;
-      margin-left: 60px;
-      padding-top: 30px;
-    }
-    h3 {
-      color: $color-dark;
-      margin-left: 75px;
-      padding-top: 10px;
-    }
-    p {
-      color: $color-dark;
-      margin-left: 50px;
-      padding-top: 10px;
-
-    }
   }
 }

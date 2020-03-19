@@ -1,0 +1,44 @@
+.about-company {
+  background-image: url(/dist/img/slider/about-company.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 450px;
+  h2 {
+    margin-top: 100px;
+    width: 331px;
+    height: 37px;
+    color: #fff;
+  }
+  p {
+    width: 445px;
+    height: 179px;
+    color: #fff;
+  }
+  .company-numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    height: 400px;
+    &__item {
+      width: 200px;
+      height: 160px;
+      background: #fff;
+    }
+    h1 {
+      color: $color-dark;
+      margin-left: 60px;
+      padding-top: 30px;
+    }
+    h3 {
+      color: $color-dark;
+      margin-left: 75px;
+      padding-top: 10px;
+    }
+    p {
+      color: $color-dark;
+      margin-left: 50px;
+      padding-top: 10px;
+    }
+  }
+}
