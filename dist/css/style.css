@@ -7,6 +7,12 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+  -webkit-transition: all easy 1s;
+  -o-transition: all easy 1s;
+  transition: all easy 1s;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -346,9 +352,6 @@ template {
 /* Золотой цвет */
 body {
   background-color: #2F343A;
-  -webkit-transition: all easy 1s;
-  -o-transition: all easy 1s;
-  transition: all easy 1s;
 }
 
 * {
