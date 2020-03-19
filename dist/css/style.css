@@ -7,6 +7,12 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+  -webkit-transition: all easy 1s;
+  -o-transition: all easy 1s;
+  transition: all easy 1s;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -346,9 +352,6 @@ template {
 /* Золотой цвет */
 body {
   background-color: #2F343A;
-  -webkit-transition: all easy 1s;
-  -o-transition: all easy 1s;
-  transition: all easy 1s;
 }
 
 * {
@@ -453,9 +456,9 @@ p {
 }
 
 .header__logo:after {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 2px;
   height: 100%;
   top: 0;
@@ -512,102 +515,6 @@ p {
 
 .menu-main li {
   list-style-type: none;
-}
-
-.block-air {
-  min-width: 1108px;
-  height: 364px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.block-air .box {
-  width: 276px;
-  height: 180px;
-  background: #393F47;
-  cursor: pointer;
-}
-
-.block-air .box p {
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 40px;
-}
-
-.block-air .box__circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 95px;
-  margin-top: 25px;
-  padding-left: 18px;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  background: #C8A35F;
-}
-
-.about-company {
-  background-image: url(/dist/img/slider/about-company.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 450px;
-}
-
-.about-company h2 {
-  margin-top: 100px;
-  width: 331px;
-  height: 37px;
-  color: #fff;
-}
-
-.about-company p {
-  width: 445px;
-  height: 179px;
-  color: #fff;
-}
-
-.about-company .company-numbers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 340px;
-  height: 650px;
-}
-
-.about-company .company-numbers__item {
-  width: 200px;
-  height: 160px;
-  background: #fff;
-}
-
-.about-company .company-numbers h1 {
-  color: #2F343A;
-  margin-left: 60px;
-  padding-top: 30px;
-}
-
-.about-company .company-numbers h3 {
-  color: #2F343A;
-  margin-left: 75px;
-  padding-top: 10px;
-}
-
-.about-company .company-numbers p {
-  color: #2F343A;
-  margin-left: 50px;
-  padding-top: 10px;
 }
 
 .hero {
@@ -758,24 +665,103 @@ p {
   color: #C8A35F;
 }
 
-.slide-show .block-air {
+.services {
+  margin-top: 100px;
+}
+
+.block-air {
+  min-width: 1108px;
+  height: 364px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 1108px;
-  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.slide-show .block-air .box {
+.block-air .box {
   width: 276px;
   height: 180px;
-  background: #FFFFFF;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-weight: 400;
-  position: relative;
+  background: #393f47;
   cursor: pointer;
-  padding: 1px;
+}
+
+.block-air .box p {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.block-air .box__circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 95px;
+  margin-top: 25px;
+  padding-left: 18px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: #C8A35F;
+}
+
+.about-company {
+  background-image: url(/dist/img/slider/about-company.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.about-company h2 {
+  margin-top: 100px;
+  width: 331px;
+  height: 37px;
+  color: #fff;
+}
+
+.about-company p {
+  width: 445px;
+  height: 179px;
+  color: #fff;
+}
+
+.about-company .company-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 580px;
+  height: 400px;
+}
+
+.about-company .company-numbers__item {
+  width: 200px;
+  height: 160px;
+  background: #fff;
+}
+
+.about-company .company-numbers h1 {
+  color: #2F343A;
+  margin-left: 60px;
+  padding-top: 30px;
+}
+
+.about-company .company-numbers h3 {
+  color: #2F343A;
+  margin-left: 75px;
+  padding-top: 10px;
+}
+
+.about-company .company-numbers p {
+  color: #2F343A;
+  margin-left: 50px;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

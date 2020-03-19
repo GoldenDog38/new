@@ -1,0 +1,32 @@
+.services {
+  margin-top: 100px;
+}
+.block-air {
+  min-width: 1108px;
+  height: 364px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .box {
+    width: 276px;
+    height: 180px;
+    background: #393f47;
+    cursor: pointer;
+    p {
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 40px;
+    }
+    &__circle {
+      display: flex;
+      margin-left: 95px;
+      margin-top: 25px;
+      padding-left: 18px;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      background: $color-gold;
+    }
+  }
+}
