@@ -582,8 +582,8 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 580px;
-  height: 400px;
+  width: 340px;
+  height: 650px;
 }
 
 .about-company .company-numbers__item {
