@@ -2,16 +2,22 @@
   margin-top: 100px;
 }
 .block-air {
-  min-width: 1108px;
-  height: 364px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   .box {
-    width: 276px;
-    height: 180px;
+    width: calc(25% - 1px);
+    min-height: 180px;
     background: #393f47;
+    margin-bottom: 2px;
     cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      background: $color-gold;
+      .box__circle {
+        background: #fff;
+      }
+    }
     p {
       color: #ffffff;
       text-align: center;
@@ -26,7 +32,9 @@
       height: 70px;
       width: 70px;
       border-radius: 50%;
-      background: $color-gold;
+
+      background: inherit;
+      transition: inherit;
     }
   }
 }

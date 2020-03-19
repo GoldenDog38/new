@@ -670,8 +670,6 @@ p {
 }
 
 .block-air {
-  min-width: 1108px;
-  height: 364px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,10 +681,22 @@ p {
 }
 
 .block-air .box {
-  width: 276px;
-  height: 180px;
+  width: calc(25% - 1px);
+  min-height: 180px;
   background: #393f47;
+  margin-bottom: 2px;
   cursor: pointer;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.block-air .box:hover {
+  background: #C8A35F;
+}
+
+.block-air .box:hover .box__circle {
+  background: #fff;
 }
 
 .block-air .box p {
@@ -706,7 +716,10 @@ p {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background: #C8A35F;
+  background: inherit;
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
 }
 
 .about-company {
