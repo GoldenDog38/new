@@ -1,23 +1,18 @@
 .hero {
-	position: relative;
-	background-image: url(/dist/img/hero/bg.png);
-	background-size: cover;
-	width: auto;
-	height: 100vh;
-	.wrapper {
-	 position: relative;
-	 z-index: 4;
-	 display: flex;
-	 flex-direction: column;
-	 align-items: center;
-	 &:before {
-		 content: '';
-		 padding-top: 15%;
-	 }
-
-	
+  position: relative;
+  background-image: url(/dist/img/hero/bg.png);
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  padding-top: 15%;
+  .wrapper {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
- 
+
   &__overlay {
     background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75));
     position: absolute;
@@ -30,40 +25,38 @@
   &__title {
     max-width: 920px;
     height: 245px;
-	 border: 1px solid #c8a35f;
-;
+    border: 1px solid #c8a35f;
   }
- 
-    h1 {
-      color: #ffffff;
-      font-weight: bold;
-      line-height: 155px;
-      text-align: center;
-      text-transform: uppercase;
-    }
-    p {
-		 color:#fff;
-		width: calc(100% - 140px);
-		margin: auto;
-		font-size: 1.5rem;
-      text-align: center;
-	 }
-	 &__mouse {
-		 position: absolute;
-		 bottom: 10px; left:50%;
-		 z-index: 1;
-		 transform: translateX(-50%);
-		 cursor: pointer;
-		 .mouse {
-			 display: block;
-			 background: url(/dist/img/header/mouse.svg);
-			 background-size: contain;
-			 background-repeat: no-repeat;
-			 background-position: center center;
-			 height: 30px;
-			 width: 30px;
-		 }
-	 }
-  }
- 
 
+  h1 {
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 155px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    color: #fff;
+    width: calc(100% - 140px);
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  &__mouse {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    cursor: pointer;
+    .mouse {
+      display: block;
+      background: url(/dist/img/header/mouse.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

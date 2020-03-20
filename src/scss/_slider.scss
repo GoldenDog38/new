@@ -6,15 +6,14 @@
 
   .slide-block {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     &__subtitle {
-      color : #fff;
+      color: #fff;
     }
-    &__title {
-      max-width: 445px;
+    &__left {
+      flex: 1 1 440px;
     }
     p {
-      width: 345px;
       text-transform: uppercase;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -30,7 +29,13 @@
       line-height: 55px;
     }
     &__img {
-      flex-direction: column;
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     &__right {
       display: flex;
