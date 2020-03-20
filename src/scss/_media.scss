@@ -35,11 +35,8 @@
     &__item {
       margin: 0 15px;
     }
-  }
-  .slide-block {
-    &__left {
-      width: 23%;
-    }
+  
+ 
   }
 }
 @media screen and (max-width: 820px) {
@@ -49,5 +46,16 @@
   }
   h1 {
     font-size: 30px;
+  }
+  .slide-block {
+    flex-wrap: wrap;
+    &__left {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__center {
+      width: 50%;
+    }
   }
 }

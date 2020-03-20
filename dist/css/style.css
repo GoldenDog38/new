@@ -915,9 +915,6 @@ p {
   .menu-main__item {
     margin: 0 15px;
   }
-  .slide-block__left {
-    width: 23%;
-  }
 }
 
 @media screen and (max-width: 820px) {
@@ -927,6 +924,20 @@ p {
   }
   h1 {
     font-size: 30px;
+  }
+  .slide-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .slide-block__left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slide-block__center {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
