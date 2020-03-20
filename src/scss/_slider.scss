@@ -35,10 +35,22 @@
       justify-content: space-between;
     }
     &__next {
+      display: flex;
+      align-items: center;
       color: $color-gold;
+      span {
+        margin-right: 25px;
+        text-transform: uppercase;
+      }
     }
     &__preview {
+      display: flex;
+      align-items: center;
       color: $color-gold;
+      span {
+        margin-left: 25px;
+        text-transform: uppercase;
+      }
     }
   }
 }

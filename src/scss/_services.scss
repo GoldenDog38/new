@@ -2,13 +2,14 @@
   margin-top: 100px;
 }
 .block-air {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   .box {
     width: calc(25% - 1px);
-    min-height: 180px;
-    background: #393f47;
+    padding: 20px 0;
+    background: $color-light-gray;
     margin-bottom: 2px;
     cursor: pointer;
     transition: 0.5s all;
@@ -16,6 +17,12 @@
       background: $color-gold;
       .box__circle {
         background: #fff;
+        .static {
+          display: none;
+        }
+        .hover {
+          display: block;
+        }
       }
     }
     p {
@@ -26,15 +33,16 @@
     }
     &__circle {
       display: flex;
-      margin-left: 95px;
-      margin-top: 25px;
+      margin: 0 auto;
       padding-left: 18px;
       height: 70px;
       width: 70px;
       border-radius: 50%;
-
-      background: inherit;
-      transition: inherit;
+      background: $color-light-gray;
+      transition: 0.1s;
+      .hover {
+        display: none;
+      }
     }
   }
 }
