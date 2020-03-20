@@ -13,10 +13,10 @@
 }
 .header {
   &__box {
-    align-content: center;
     height: 160px;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
   }
   &__logo {
     position: relative;
@@ -33,8 +33,10 @@
   }
   &__ouradress {
     margin-left: 50px;
+    height: contain;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     p {
       color: #fff;
     }
@@ -51,9 +53,11 @@
 }
 .menu-main {
   &__list {
+    height: 100%;
     width: 500px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__item {
     color: #fff;
