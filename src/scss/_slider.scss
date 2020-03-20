@@ -7,6 +7,9 @@
   .slide-block {
     display: flex;
     flex-wrap: wrap;
+    &__subtitle {
+      color : #fff;
+    }
     &__title {
       max-width: 445px;
     }
